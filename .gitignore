@@ -31,3 +31,6 @@ yarn-error.log*
 
 # mock server
 /mock-server
+
+# Local Netlify folder
+.netlify
