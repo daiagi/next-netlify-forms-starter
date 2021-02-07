@@ -34,7 +34,7 @@ export default function CheckoutPage() {
   async function _submitForm(values, actions) {
     const config = {
       method: 'post',
-      url: 'https://festive-sammet-578d94.netlify.app/api/formtest',
+      url: 'https://festive-sammet-578d94.netlify.app/.netlify/functions/formtest',
       headers: { 
         'Content-Type': 'application/json'
       },

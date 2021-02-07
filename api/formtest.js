@@ -1,7 +1,7 @@
 exports.handler = async function(event, context) {
     // your server-side functionality
 
-    if (event.method === 'POST') {
+    if (event.httpMethod === 'POST') {
         const body = JSON.parse(event.body)
         // console.log(request);
         if(body.firstName.includes('f') ) {
