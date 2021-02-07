@@ -1,23 +1,13 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
-
-export default function Home() {
+import CheckoutPage from '@components/checkoutPage';
+import React from 'react';
+import MaterialLayout from '../components/layout/materialLayout';
+function App() {
   return (
-    <div className="container">
-      <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-      </main>
-
-      <Footer />
+    <div>
+      <MaterialLayout>
+        <CheckoutPage />
+      </MaterialLayout>
     </div>
-  )
+  );
 }
+export default App;
